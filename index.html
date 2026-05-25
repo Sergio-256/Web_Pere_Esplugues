@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Falla — Pàgina Oficial</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================
+       HEADER / NAVEGACIÓN
+       ===================== -->
+  <header>
+    <nav>
+      <div class="nav-logo">🔥 FALLA PERE ESPLUGUES</div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio"         class="activo">Inicio</a></li>
+        <li><a href="#comision">Comission</a></li>
+        <li><a href="#representantes">Representantos</a></li>
+        <li><a href="#monumentos">Monumentos</a></li>
+        <li><a href="#premios">Palmares</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#llibrets">Llibrets</a></li>
+        <li><a href="#contacto">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- =====================
+       INICIO / HERO
+       ===================== -->
+  <section id="inicio">
+
+    <!-- Escudo -->
+    <div class="escudo-hero">🛡️</div>
+
+    <h1 class="hero-titulo">Falla<br>Pere Esplugues</h1>
+    <p class="hero-subtitulo">Valencia — Desde 1952</p>
+
+    <!-- Cuenta atrás -->
+    <div class="cuenta-atras" id="cuentaAtras">
+      <div class="cuenta-atras__bloque">
+        <span class="cuenta-atras__numero" id="dias">--</span>
+        <span class="cuenta-atras__label">Dias</span>
+      </div>
+      <div class="cuenta-atras__bloque">
+        <span class="cuenta-atras__numero" id="horas">--</span>
+        <span class="cuenta-atras__label">Horas</span>
+      </div>
+      <div class="cuenta-atras__bloque">
+        <span class="cuenta-atras__numero" id="minutos">--</span>
+        <span class="cuenta-atras__label">Minutos</span>
+      </div>
+      <div class="cuenta-atras__bloque">
+        <span class="cuenta-atras__numero" id="segundos">--</span>
+        <span class="cuenta-atras__label">Segundos</span>
+      </div>
+    </div>
+
+    <!-- Frase aleatoria -->
+    <blockquote class="frase-fallera" id="fraseFallera">
+      "Tot l'any esperant les Falles, i les Falles passen en un sospir."
+    </blockquote>
+
+    <!-- Botones apartados -->
+    <div class="botones-apartados">
+      <a href="#comision"       class="btn">Comissió</a>
+      <a href="#representantes" class="btn">Representants</a>
+      <a href="#monumentos"     class="btn">Monuments</a>
+      <a href="#premios"        class="btn">Palmarès</a>
+      <a href="#calendario"     class="btn btn--solido">Calendari</a>
+      <a href="#noticias"       class="btn">Notícies</a>
+      <a href="#galeria"        class="btn">Galeria</a>
+      <a href="#llibrets"       class="btn">Llibrets</a>
+      <a href="#contacto"       class="btn btn--solido">Contacte</a>
+    </div>
+
+  </section>
+
+
+  <!-- =====================
+       COMISIÓN
+       ===================== -->
+  <section id="comision">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Comissió</h2>
+      <div class="seccion-linea"></div>
+
+      <p class="seccion-texto">
+       Texto de presentacionb de la falla.
+      </p>
+      <p class="seccion-texto" style="margin-top:1rem;">
+      </p>
+
+      <!-- Mapa -->
+      <div class="mapa-placeholder">
+        <!--
+          Para integrar Google Maps:
+          1. Ve a maps.google.com
+          2. Busca la dirección de tu falla
+          3. Pulsa "Compartir" > "Insertar un mapa"
+          4. Copia el código <iframe> y pégalo aquí
+        -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.2!2d-0.3773!3d39.4697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDI4JzExLjAiTiAwwrAyMic0Mi41Ilc!5e0!3m2!1ses!2ses!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          title="Ubicació de la falla">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       REPRESENTANTES
+       ===================== -->
+  <section id="representantes">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Representantes</h2>
+      <div class="seccion-linea"></div>
+
+      <!-- Filtro por año -->
+      <div class="rep-selector" id="repSelector">
+        <button class="activo" data-anyo="2025">2025</button>
+        <button data-anyo="2024">2024</button>
+        <button data-anyo="2023">2023</button>
+        <button data-anyo="2022">2022</button>
+        <button data-anyo="2021">2021</button>
+      </div>
+
+      <div class="rep-grid" id="repGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       MONUMENTOS
+       ===================== -->
+  <section id="monumentos">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Monumentos</h2>
+      <div class="seccion-linea"></div>
+      <p class="seccion-texto" style="margin-bottom:2rem;">
+        Texto de presentacion de monumentos
+      </p>
+
+      <div class="mon-grid" id="monGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       PREMIOS / PALMARÈS
+       ===================== -->
+  <section id="premios">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Palmares</h2>
+      <div class="seccion-linea"></div>
+      <p class="seccion-texto" style="margin-bottom:2rem;">
+       Premios obtenidos por la falla en los ultimos años
+      </p>
+
+      <div style="overflow-x:auto;">
+        <table class="premios-tabla">
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Monumento</th>
+              <th>Sección</th>
+              <th>Premio</th>
+              <th>Posición</th>
+            </tr>
+          </thead>
+          <tbody id="premiosTbody">
+            <!-- Generado por JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       CALENDARIO
+       ===================== -->
+  <section id="calendario">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Calendario</h2>
+      <div class="seccion-linea"></div>
+
+      <div class="cal-wrap">
+        <div class="cal-cabecera">
+          <button class="cal-nav" id="calPrev">&#8592;</button>
+          <div class="cal-mes" id="calMes">MARZO 2025</div>
+          <button class="cal-nav" id="calNext">&#8594;</button>
+        </div>
+        <div class="cal-grid" id="calGrid">
+          <!-- Generado por JS -->
+        </div>
+
+        <div class="cal-eventos-lista" id="calEventos">
+          <!-- Eventos del mes -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       NOTICIAS
+       ===================== -->
+  <section id="noticias">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Noticias</h2>
+      <div class="seccion-linea"></div>
+
+      <div class="noticias-grid" id="noticiasGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       GALERÍA
+       ===================== -->
+  <section id="galeria">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Galería</h2>
+      <div class="seccion-linea"></div>
+
+      <div class="galeria-grid" id="galeriaGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="Foto ampliada" id="lightboxImg" />
+    </div>
+  </section>
+
+
+  <!-- =====================
+       LLIBRETS
+       ===================== -->
+  <section id="llibrets">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Llibrets</h2>
+      <div class="seccion-linea"></div>
+      <p class="seccion-texto" style="margin-bottom:2rem;">
+       Llibrets de la falla
+      </p>
+
+      <div class="llibrets-grid" id="llibretsGrid">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       CONTACTO
+       ===================== -->
+  <section id="contacto">
+    <div class="seccion-inner">
+      <h2 class="seccion-titulo">Contacto</h2>
+      <div class="seccion-linea"></div>
+      <p class="seccion-texto">
+       Sigue las redes sociales de la falla para estar al día de todas las novedades, eventos y noticias relacionadas con nuestra comisión. ¡Únete a nuestra comunidad y comparte tu pasión por las Fallas!
+      </p>
+
+      <div class="contacto-rrss">
+        <a href="https://instagram.com/TU_USUARIO" target="_blank" class="rrss-btn rrss-instagram">
+          <span class="icono">📸</span> Instagram
+        </a>
+        <a href="https://facebook.com/TU_PAGINA" target="_blank" class="rrss-btn rrss-facebook">
+          <span class="icono">👍</span> Facebook
+        </a>
+        <a href="https://tiktok.com/@TU_USUARIO" target="_blank" class="rrss-btn rrss-tiktok">
+          <span class="icono">🎵</span> TikTok
+        </a>
+        <a href="mailto:info@tufalla.es" class="rrss-btn rrss-email">
+          <span class="icono">✉️</span> info@tufalla.es
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer>
+  </footer>
+
+
+  <!-- =====================
+       JAVASCRIPT
+       ===================== -->
+  <script src="main.js"></script>
+</body>
+</html>
